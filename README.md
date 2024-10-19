@@ -2,7 +2,7 @@
 Dotnet development environment for Ubuntu 24
 
 
-```
+```bash
 # Install the SDK
 sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
 
