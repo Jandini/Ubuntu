@@ -65,6 +65,9 @@ sudo snap install spotify
 echo "Installing VLC player..."
 sudo snap install vlc
 
+# Install Ghidra
+echo "Installing Ghidra..."
+sudo snap install ghidra
 
 # Final update and cleanup
 echo "Final update and cleanup..."
