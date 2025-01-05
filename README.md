@@ -47,4 +47,6 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jandini/Ubuntu/refs/
 ### [**Spotify**](https://www.spotify.com/)  
    A popular music streaming application.
 
+### [**Ghidra**](https://ghidra-sre.org/)  
+A powerful open-source software reverse engineering (SRE) suite of tools for analyzing and debugging binaries.
 
