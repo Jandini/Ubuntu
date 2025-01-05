@@ -24,6 +24,9 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jandini/Ubuntu/refs/
 ### [**Git**](https://git-scm.com/)  
    A widely-used version control system for tracking changes in source code.
 
+### [**Docker**](https://www.docker.com/)  
+   A platform for developing, shipping, and running applications in lightweight, portable containers.   
+
 ### [**Hexyl**](https://github.com/sharkdp/hexyl)  
    A command-line hex viewer for inspecting binary files.
 
