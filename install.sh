@@ -17,6 +17,10 @@ rm -f packages.microsoft.gpg
 sudo apt-get update -y
 sudo apt-get install -y code
 
+# Install Visual Studio Code Extensions
+echo "Installing C# Dev Kit..."
+code --install-extension ms-dotnettools.csdevkit
+
 # Install .NET SDK 8 and 9
 echo "Installing .NET SDK 8..."
 sudo apt-get install -y dotnet-sdk-8.0
