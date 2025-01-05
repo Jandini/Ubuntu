@@ -10,33 +10,33 @@ To execute the script, run the following command in your terminal:
 sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jandini/Ubuntu/refs/heads/main/install.sh)"
 ```
 
-## Tools Included
+## Tools
 
-1. **Visual Studio Code**  
+### [**Visual Studio Code**](https://code.visualstudio.com/)  
    A powerful, extensible code editor with support for various programming languages and extensions.
 
-2. **.NET SDK (8 & 9)**  
+### [**.NET SDK (8 & 9)**](https://dotnet.microsoft.com/en-us/download)  
    Software Development Kits for building and running .NET applications.
 
-3. **.NET Runtime (8 & 9)**  
+### [**.NET Runtime (8 & 9)**](https://dotnet.microsoft.com/en-us/download)  
    Runtimes for hosting and executing .NET applications.
 
-4. **Git**  
+### [**Git**](https://git-scm.com/)  
    A widely-used version control system for tracking changes in source code.
 
-5. **Hexyl**  
+### [**Hexyl**](https://github.com/sharkdp/hexyl)  
    A command-line hex viewer for inspecting binary files.
 
-6. **Midnight Commander (MC)**  
+### [**Midnight Commander (MC)**](https://midnight-commander.org/)  
    A text-based file manager for efficient file navigation and management.
 
-7. **Postman**  
+### [**Postman**](https://www.postman.com/)  
    An API platform for building, testing, and monitoring APIs.
 
-8. **Chromium**  
+### [**Chromium**](https://www.chromium.org/chromium-projects/)  
    An open-source web browser for web development and testing.
 
-9. **Spotify**  
+### [**Spotify**](https://www.spotify.com/)  
    A popular music streaming application.
 
 
