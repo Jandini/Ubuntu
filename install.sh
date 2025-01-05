@@ -53,6 +53,10 @@ sudo snap install chromium
 echo "Installing Spotify..."
 sudo snap install spotify
 
+# Install Docker
+echo "Installing Docker..."
+sudo snap install docker
+
 # Final update and cleanup
 echo "Final update and cleanup..."
 sudo apt-get update -y
