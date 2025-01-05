@@ -37,6 +37,10 @@ sudo apt-get install -y aspnetcore-runtime-9.0
 echo "Installing Git..."
 sudo apt-get install -y git-all
 
+# Install Docker
+echo "Installing Docker..."
+sudo snap install docker
+
 # Install Hexyl
 echo "Installing Hexyl..."
 sudo apt-get install -y hexyl
@@ -57,9 +61,10 @@ sudo snap install chromium
 echo "Installing Spotify..."
 sudo snap install spotify
 
-# Install Docker
-echo "Installing Docker..."
-sudo snap install docker
+# Install VLC player
+echo "Installing VLC player..."
+sudo snap install vlc
+
 
 # Final update and cleanup
 echo "Final update and cleanup..."
