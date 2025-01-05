@@ -15,6 +15,11 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jandini/Ubuntu/refs/
 ### [**Visual Studio Code**](https://code.visualstudio.com/)  
    A powerful, extensible code editor with support for various programming languages and extensions.
 
+   C# Dev Kit
+   ```sh
+   code --install-extension ms-dotnettools.csdevkit
+   ```
+
 ### [**.NET SDK (8 & 9)**](https://dotnet.microsoft.com/en-us/download)  
    Software Development Kits for building and running .NET applications.
 
