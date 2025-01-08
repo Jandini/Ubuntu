@@ -71,7 +71,12 @@ sudo snap install ghidra
 
 # Linux Cubic
 echo "Installing Linux Cubic..."
-sudo snap install cubic
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys B7579F80E494ED3406A59DF9081525E2B4F1283B
+sudo apt-add-repository -y universe
+sudo apt-add-repository -y ppa:cubic-wizard/release
+sudo apt update
+sudo apt install -y --no-install-recommends cubic
+
 
 # Final update and cleanup
 echo "Final update and cleanup..."
