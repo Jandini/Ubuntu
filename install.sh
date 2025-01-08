@@ -69,6 +69,10 @@ sudo snap install vlc
 echo "Installing Ghidra..."
 sudo snap install ghidra
 
+# Linux Cubic
+echo "Installing Linux Cubic..."
+sudo snap install cubic
+
 # Final update and cleanup
 echo "Final update and cleanup..."
 sudo apt-get update -y
