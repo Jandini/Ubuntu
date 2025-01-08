@@ -50,3 +50,5 @@ sudo bash -c "$(wget -qO- https://raw.githubusercontent.com/Jandini/Ubuntu/refs/
 ### [**Ghidra**](https://ghidra-sre.org/)  
 A powerful open-source software reverse engineering (SRE) suite of tools for analyzing and debugging binaries.
 
+### [**Linux Cubic**](https://launchpad.net/cubic)  
+   A user-friendly GUI application for creating custom live Linux ISO images.
