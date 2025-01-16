@@ -39,9 +39,14 @@ echo "Installing .NET Runtime 9..."
 sudo apt-get install -y aspnetcore-runtime-9.0
 
 # Trust HTTPS certificate on Linux with linux-dev-certs
+echo "Installing .NET Linux development certificates..."
 sudo dotnet tool update -g linux-dev-certs
 sudo dotnet linux-dev-certs install
 sudo dotnet dev-certs https --trust
+
+# Dotnet GitVersion
+echo "Installing GitVersion tool..."
+dotnet tool install --global GitVersion.Tool --version 5.*
 
 # Install Git
 echo "Installing Git..."
