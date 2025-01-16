@@ -24,7 +24,8 @@ echo "Installing Docker extension..."
 code --install-extension ms-azuretools.vscode-docker
 echo "Installing GitHub Actions extension..."
 code --install-extension github.vscode-github-actions
-
+echo "Installing PowerShell extension..."
+code --install-extension ms-vscode.powershell
 
 # Install .NET SDK 8 and 9
 echo "Installing .NET SDK 8..."
