@@ -23,6 +23,7 @@ code --install-extension ms-dotnettools.csdevkit
 echo "Installing Docker Extensions..."
 code --install-extension ms-azuretools.vscode-docker
 
+
 # Install .NET SDK 8 and 9
 echo "Installing .NET SDK 8..."
 sudo apt-get install -y dotnet-sdk-8.0
@@ -34,6 +35,10 @@ echo "Installing .NET Runtime 8..."
 sudo apt-get install -y aspnetcore-runtime-8.0
 echo "Installing .NET Runtime 9..."
 sudo apt-get install -y aspnetcore-runtime-9.0
+
+# Trust HTTPS certificate on Linux with linux-dev-certs
+sudo dotnet tool update -g linux-dev-certs
+sudo dotnet linux-dev-certs install
 
 # Install Git
 echo "Installing Git..."
