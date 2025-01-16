@@ -92,7 +92,7 @@ echo "Installing Chromium..."
 sudo snap install chromium
 
 # Install Spotify
-echo "Installing Spotify..."
+echo "Installing Spotify..."r
 sudo snap install spotify
 
 # Install VLC player
@@ -110,6 +110,22 @@ sudo apt-add-repository -y universe
 sudo apt-add-repository -y ppa:cubic-wizard/release
 sudo apt update
 sudo apt install -y --no-install-recommends cubic
+
+
+# Add xclip for git log main..HEAD --pretty=format:"- [x] %s (%h)" | xclip
+echo "Installing xclip..."
+sudo apt install -y xclip 
+
+shell_config="$HOME/.bashrc"
+list_command='git log main..HEAD --pretty=format:\"- [x] %s (%h)\" | xclip'
+
+if ! grep -q '.list' "$shell_config"; then
+  echo "alias .list=\"$list_command\"" >> "$shell_config"
+  echo ".list command added to $shell_config."
+else
+  echo ".list command already exists in $shell_config."
+fi
+
 
 
 # Final update and cleanup
