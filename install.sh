@@ -26,6 +26,9 @@ echo "Installing GitHub Actions extension..."
 code --install-extension github.vscode-github-actions
 echo "Installing PowerShell extension..."
 code --install-extension ms-vscode.powershell
+echo "Installing Yaml formatter extension..."
+code --install-formatter bluebrown.yamlfmt
+
 
 # Install .NET SDK 8 and 9
 echo "Installing .NET SDK 8..."
@@ -48,6 +51,21 @@ sudo dotnet dev-certs https --trust
 # Dotnet GitVersion
 echo "Installing GitVersion tool..."
 dotnet tool install --global GitVersion.Tool --version 5.*
+
+echo "Installing nuget command line tool..."
+# Mono 
+sudo apt install ca-certificates gnupg
+sudo gpg --homedir /tmp --no-default-keyring --keyring /usr/share/keyrings/mono-official-archive-keyring.gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb [signed-by=/usr/share/keyrings/mono-official-archive-keyring.gpg] https://download.mono-project.com/repo/ubuntu stable-focal main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+sudo apt update
+sudo apt install -y mono-devel
+sudo apt install -y curl
+# Download the latest stable `nuget.exe` to `/usr/local/bin`
+sudo curl -o /usr/local/bin/nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+# Create as alias for nuget
+alias nuget="mono /usr/local/bin/nuget.exe"
+
+
 
 # Install Git
 echo "Installing Git..."
