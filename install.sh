@@ -18,10 +18,12 @@ sudo apt-get update -y
 sudo apt-get install -y code
 
 # Install Visual Studio Code Extensions
-echo "Installing C# Dev Kit..."
+echo "Installing C# Dev Kit extension..."
 code --install-extension ms-dotnettools.csdevkit
-echo "Installing Docker Extensions..."
+echo "Installing Docker extension..."
 code --install-extension ms-azuretools.vscode-docker
+echo "Installing GitHub Actions extension..."
+code --install-extension github.vscode-github-actions
 
 
 # Install .NET SDK 8 and 9
