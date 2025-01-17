@@ -26,9 +26,9 @@ echo "Installing GitHub Actions extension..."
 code --install-extension github.vscode-github-actions
 echo "Installing PowerShell extension..."
 code --install-extension ms-vscode.powershell
-echo "Installing Yaml formatter extension..."
-code --install-formatter bluebrown.yamlfmt
-
+echo "Installing formatters extension..."
+code --install-extension bluebrown.yamlfmt
+code --install-extension redhat.vscode-xml
 
 # Install .NET SDK 8 and 9
 echo "Installing .NET SDK 8..."
