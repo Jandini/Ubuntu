@@ -117,7 +117,7 @@ echo "Installing xclip..."
 sudo apt install -y xclip 
 
 shell_config="$HOME/.bashrc"
-list_command='git log main..HEAD --pretty=format:\"- [x] %s (%h)\" | xclip'
+list_command='git log main..HEAD --pretty=format:"- [x] %s (%h)" | tee >(xclip -selection clipboard); echo'
 
 if ! grep -q '.list' "$shell_config"; then
   echo "alias .list=\"$list_command\"" >> "$shell_config"
