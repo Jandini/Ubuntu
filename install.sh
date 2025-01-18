@@ -26,6 +26,8 @@ echo "Installing GitHub Actions extension..."
 code --install-extension github.vscode-github-actions
 echo "Installing PowerShell extension..."
 code --install-extension ms-vscode.powershell
+echo "Installing GitHub Copilot extension..."
+code --install-extension github.copilot
 echo "Installing formatters extension..."
 code --install-extension bluebrown.yamlfmt
 code --install-extension redhat.vscode-xml
@@ -45,7 +47,8 @@ sudo apt-get install -y aspnetcore-runtime-9.0
 # Trust HTTPS certificate on Linux with linux-dev-certs
 echo "Installing .NET Linux development certificates..."
 sudo dotnet tool update -g linux-dev-certs
-sudo dotnet linux-dev-certs install
+# Not sure why using sudo cause error
+dotnet linux-dev-certs install
 sudo dotnet dev-certs https --trust
 
 # Dotnet GitVersion
